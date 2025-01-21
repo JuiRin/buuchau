@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buu Chau</title>
+    <link rel="stylesheet" href="style.css">
+	<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="index.html" class="logo">Buu Chau</a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#tour">TOUR</a></li>
+            <li><a href="#package">PACKAGE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#">BOOK TRIP</a></li>
+        </ul>
+        <div class="nav__btns">
+        <button class="btn">BOOK TRIP</button>
+        </div>
+    </nav>
+
+    <style>
+       
+        .form-container {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4facfe;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #00c6ff;
+        }
+    </style>
+</head>
+
+
+    <div id="book-trip" class="form-container">
+        <h2>旅行予約フォーム</h2>
+        <form id="bookTripForm">
+            <div class="form-group">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" placeholder="お名前を入力してください" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" placeholder="メールアドレスを入力してください" required>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">ツアーを選択</label>
+                <select id="destination" name="destination" required>
+                    <option value="">ツアーを選んでください</option>
+                    <option value="halong_bay">ハロン湾 - クルーズアドベンチャー</option>
+                    <option value="hanoi">ハノイ市内ツアー - 歴史と文化の体験</option>
+                    <option value="danang">ダナン - バーナヒルズとゴールデンブリッジ</option>
+                    <option value="sapa">サパ - 山岳トレッキングと民族村</option>
+                    <option value="hochiminh">ホーチミン市 - メコンデルタ探索</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">旅行日</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">追加情報</label>
+                <textarea id="message" name="message" placeholder="その他の詳細を入力してください"></textarea>
+            </div>
+
+            <button type="submit" class="btn">送信</button>
+        </form>
+    </div>
+  
+      <footer id="contact">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <div class="footer__logo">
+              <a href="#" class="logo">Buu Chau</a>
+            </div>
+            <p>
+                私たちの総合旅行プラットフォームを通じて、簡単でワクワクするような旅行をお楽しみください。旅の計画がスムーズに進み、
+                忘れられない体験が待っています。あなたの旅はここから始まります。
+            </p>
+            <ul class="footer__socials">
+              <li>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-youtube-line"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Quick Links</h4>
+            <ul class="footer__links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Flights</a></li>
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Cruise</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contact Us</h4>
+            <ul class="footer__links">
+              <li>
+                <a href="#">
+                  <span><i class="ri-phone-fill"></i></span> +08 239999999
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span><i class="ri-mail-line"></i></span> dulichbuuchau@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span><i class="ri-map-pin-2-fill"></i></span> Tra Vinh, Viet Nam
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Subscribe</h4>
+            <form action="/">
+              <input type="text" placeholder="Enter your email" />
+              <button class="btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2024 CTTNHHMTV BUU CHAU. All rights reserved.
+        </div>
+      </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
